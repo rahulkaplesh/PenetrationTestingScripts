@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 import socket
 from termcolor import colored
@@ -14,5 +14,5 @@ def portscanner(port):
    else:
       print (colored("Port %d is open" % (port), 'green'))
 
-for port in range(440,450):
+for port in range(1,65535):
    portscanner(port)

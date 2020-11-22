@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 from socket import *
 import optparse
@@ -27,7 +27,7 @@ def portScan(tgtHost,tgtPorts):
       print (colored('[+] Scan results for:' + tgtIP, 'green'))
    setdefaulttimeout(1)
    for tgtPort in tgtPorts :
-      t = Thread(target=connScan, args=(tgtHost,int(t gtPort)))
+      t = Thread(target=connScan, args=(tgtHost,int(tgtPort)))
       t.start()
 
 def main():
